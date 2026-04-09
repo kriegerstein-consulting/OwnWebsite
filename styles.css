@@ -104,9 +104,10 @@ body {
 
 .btn-full { width: 100%; }
 
-/* ---- LOGO INVERT (for dark backgrounds) ---- */
+/* ---- LOGO on dark backgrounds ---- */
+/* mix-blend-mode:screen makes white transparent, blue colors stay */
 .logo-invert {
-  filter: brightness(0) invert(1);
+  mix-blend-mode: screen;
 }
 
 /* ---- NAV ---- */
@@ -728,6 +729,75 @@ body {
 .legal-section a {
   color: rgba(255,255,255,0.6);
   text-decoration: underline;
+}
+
+/* ---- LEGAL PAGES ---- */
+.legal-page {
+  background: var(--gray-50);
+}
+.legal-main {
+  padding: 120px 0 80px;
+  min-height: 80vh;
+}
+.legal-main .container {
+  max-width: 780px;
+}
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: none;
+  margin-bottom: 40px;
+  transition: gap var(--transition);
+}
+.back-link svg {
+  width: 16px;
+  height: 16px;
+}
+.back-link:hover {
+  gap: 10px;
+}
+.legal-main h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--gray-100);
+}
+.legal-main h2 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 32px 0 10px;
+}
+.legal-main p, .legal-main li {
+  font-size: 0.9375rem;
+  color: var(--gray-500);
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+.legal-main ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.legal-main a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+.legal-main code {
+  font-family: monospace;
+  background: var(--gray-100);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+.footer-simple {
+  padding-top: 0;
 }
 
 /* ---- ANIMATIONS ---- */
