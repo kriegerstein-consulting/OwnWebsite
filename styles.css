@@ -104,12 +104,6 @@ body {
 
 .btn-full { width: 100%; }
 
-/* ---- LOGO on dark backgrounds ---- */
-/* mix-blend-mode:screen makes white transparent, blue colors stay */
-.logo-invert {
-  mix-blend-mode: screen;
-}
-
 /* ---- NAV ---- */
 .nav {
   position: fixed;
