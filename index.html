@@ -3,22 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kriegerstein Consulting – Your Partner for Complexity and Growth</title>
-  <meta name="description" content="Kriegerstein Consulting – KI-Automatisierung und strategische Beratung für den Mittelstand." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <title>Kriegerstein Consulting – Ihr Partner für KI-Automatisierung im Mittelstand</title>
+  <meta name="description" content="Kriegerstein Consulting – KI-Automatisierung und strategische Beratung für den Mittelstand. Jetzt kostenloses Erstgespräch vereinbaren." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie-Hinweis">
+    <div class="cookie-inner">
+      <div class="cookie-text">
+        <strong>Hinweis zu Cookies</strong>
+        <p>
+          Diese Website verwendet keine Tracking-Cookies. Wir nutzen ausschließlich technisch
+          notwendige Funktionen. Durch die Nutzung dieser Website stimmen Sie unserer
+          <a href="#datenschutz">Datenschutzerklärung</a> zu.
+        </p>
+      </div>
+      <div class="cookie-actions">
+        <button class="btn btn-primary btn-sm" id="cookieAccept">Verstanden</button>
+      </div>
+    </div>
+  </div>
+
   <!-- NAV -->
-  <nav class="nav">
+  <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="#" class="nav-logo">
-        <img src="logo-white.svg" alt="Kriegerstein Consulting" height="44" />
+        <img src="logo.png" alt="Kriegerstein Consulting" height="44" class="logo-invert" />
       </a>
-      <a href="#contact" class="btn btn-outline-light nav-cta">Gespräch vereinbaren</a>
+      <a href="#kontakt" class="btn btn-outline-light nav-cta">Gespräch vereinbaren</a>
     </div>
   </nav>
 
@@ -28,20 +42,18 @@
     <div class="container hero-content">
       <p class="hero-eyebrow">KI-Beratung für den Mittelstand</p>
       <h1 class="hero-headline">
-        Delivering Strategic Insight.<br />
-        Architecting Proven Results.
+        Strategische Einblicke.<br />
+        Bewährte Ergebnisse.
       </h1>
       <p class="hero-sub">
-        Kriegerstein Consulting – Your Partner for Complexity and Growth.
+        Kriegerstein Consulting – Ihr Partner für Komplexität und Wachstum.
       </p>
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Kostenloses Erstgespräch buchen</a>
-        <a href="#about" class="btn btn-ghost">Mehr erfahren</a>
+        <a href="#kontakt" class="btn btn-primary">Kostenloses Erstgespräch buchen</a>
+        <a href="#leistungen" class="btn btn-ghost">Mehr erfahren</a>
       </div>
     </div>
-    <div class="hero-scroll-hint" aria-hidden="true">
-      <span></span>
-    </div>
+    <div class="hero-scroll-hint" aria-hidden="true"><span></span></div>
   </section>
 
   <!-- COMING SOON BANNER -->
@@ -49,18 +61,18 @@
     <div class="container coming-soon-inner">
       <span class="badge">In Entwicklung</span>
       <p>
-        Unsere vollständige Website ist in Kürze verfügbar. Bis dahin freuen wir uns auf Ihr Interesse –
-        vereinbaren Sie jetzt bereits ein unverbindliches Erstgespräch.
+        Unsere vollständige Website befindet sich im Aufbau. Bis dahin freuen wir uns auf Ihre
+        Anfrage – vereinbaren Sie jetzt ein unverbindliches Erstgespräch zum Thema KI.
       </p>
     </div>
   </section>
 
-  <!-- ABOUT / VALUE PROP -->
-  <section class="section" id="about">
+  <!-- LEISTUNGEN -->
+  <section class="section" id="leistungen">
     <div class="container">
       <div class="section-header">
         <p class="section-eyebrow">Was wir tun</p>
-        <h2 class="section-title">KI-gestützte Lösungen,<br />die wirklich funktionieren.</h2>
+        <h2 class="section-title">KI-Lösungen, die<br />wirklich funktionieren.</h2>
         <p class="section-desc">
           Wir helfen mittelständischen Unternehmen dabei, das Potenzial von Künstlicher Intelligenz
           gezielt zu nutzen – praxisnah, umsetzbar und auf Ihren Betrieb zugeschnitten.
@@ -74,7 +86,7 @@
           </div>
           <h3>KI-Strategie &amp; Beratung</h3>
           <p>
-            Gemeinsam identifizieren wir die größten Hebelpunkte in Ihrem Unternehmen –
+            Gemeinsam identifizieren wir die größten Hebelpunkte in Ihrem Unternehmen
             und entwickeln eine klare KI-Roadmap, die zu Ihren Zielen passt.
           </p>
         </div>
@@ -102,8 +114,8 @@
     </div>
   </section>
 
-  <!-- WHY US -->
-  <section class="section section-dark" id="why">
+  <!-- WARUM WIR -->
+  <section class="section section-dark" id="warum">
     <div class="container">
       <div class="why-grid">
         <div class="why-text">
@@ -131,8 +143,8 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="section" id="contact">
+  <!-- KONTAKT -->
+  <section class="section" id="kontakt">
     <div class="container">
       <div class="contact-grid">
         <div class="contact-text">
@@ -165,7 +177,7 @@
               <input type="text" id="name" name="name" placeholder="Max Mustermann" required />
             </div>
             <div class="form-group">
-              <label for="email">E-Mail *</label>
+              <label for="email">E-Mail-Adresse *</label>
               <input type="email" id="email" name="email" placeholder="max@unternehmen.de" required />
             </div>
             <div class="form-group">
@@ -178,9 +190,9 @@
             </div>
             <div class="form-note">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
-              Oder direkt einen Termin buchen:
-              <a href="mailto:info@kriegerstein.com?subject=Terminanfrage%20Erstgespräch">Terminanfrage per E-Mail</a>
-              <!-- Kalender-Integration folgt in Kürze -->
+              Sie möchten direkt einen Termin buchen?
+              <a href="mailto:info@kriegerstein.com?subject=Terminanfrage%20Erstgespräch%20KI-Beratung">Terminanfrage per E-Mail senden</a>
+              &nbsp;– Online-Buchung folgt in Kürze.
             </div>
             <button type="submit" class="btn btn-primary btn-full">Nachricht senden</button>
           </form>
@@ -193,17 +205,18 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-logo">
-        <img src="logo-white.svg" alt="Kriegerstein Consulting" height="36" />
+        <img src="logo.png" alt="Kriegerstein Consulting" height="36" class="logo-invert" />
       </div>
       <p class="footer-copy">© 2025 Kriegerstein Consulting GbR. Alle Rechte vorbehalten.</p>
       <div class="footer-links">
         <a href="#impressum">Impressum</a>
+        <a href="#datenschutz">Datenschutz</a>
         <a href="mailto:info@kriegerstein.com">Kontakt</a>
       </div>
     </div>
 
     <!-- IMPRESSUM -->
-    <div class="impressum" id="impressum">
+    <div class="legal-section" id="impressum">
       <div class="container">
         <h4>Impressum</h4>
         <p>
@@ -216,13 +229,80 @@
           E-Mail: <a href="mailto:info@kriegerstein.com">info@kriegerstein.com</a>
         </p>
         <p>
-          Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br />
+          <strong>Gesellschafter:</strong><br />
+          Die Gesellschafter der Kriegerstein Consulting GbR sind auf Anfrage erhältlich.
+        </p>
+        <p>
+          <strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</strong><br />
           Kriegerstein Consulting GbR, Waldstraße 6, 63065 Offenbach am Main
         </p>
-        <p class="impressum-note">
-          Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung
-          für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich
-          deren Betreiber verantwortlich.
+        <p>
+          <strong>Hinweis zur Umsatzsteuer:</strong><br />
+          Eine Umsatzsteuer-Identifikationsnummer liegt derzeit nicht vor.
+        </p>
+        <p>
+          <strong>Streitschlichtung:</strong><br />
+          Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+          <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr</a>.
+          Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer
+          Verbraucherschlichtungsstelle teilzunehmen.
+        </p>
+        <p>
+          <strong>Haftung für Inhalte:</strong><br />
+          Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten
+          nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
+          Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde
+          Informationen zu überwachen.
+        </p>
+        <p>
+          <strong>Haftung für Links:</strong><br />
+          Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen
+          Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
+          oder Betreiber der Seiten verantwortlich.
+        </p>
+        <p>
+          <strong>Urheberrecht:</strong><br />
+          Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen
+          dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art
+          der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen
+          Zustimmung des jeweiligen Autors bzw. Erstellers.
+        </p>
+      </div>
+    </div>
+
+    <!-- DATENSCHUTZ -->
+    <div class="legal-section" id="datenschutz">
+      <div class="container">
+        <h4>Datenschutzerklärung</h4>
+        <p>
+          <strong>Verantwortlicher:</strong><br />
+          Kriegerstein Consulting GbR, Waldstraße 6, 63065 Offenbach am Main<br />
+          E-Mail: <a href="mailto:info@kriegerstein.com">info@kriegerstein.com</a>
+        </p>
+        <p>
+          <strong>Hosting:</strong><br />
+          Diese Website wird auf einem eigenen Server in Deutschland gehostet. Beim Aufruf der
+          Website werden automatisch technische Daten (IP-Adresse, Datum/Uhrzeit, aufgerufene
+          Seite) im Server-Logfile gespeichert. Diese Daten werden nicht mit anderen Datenquellen
+          zusammengeführt und nach spätestens 7 Tagen gelöscht.
+        </p>
+        <p>
+          <strong>Cookies:</strong><br />
+          Diese Website verwendet ausschließlich ein technisch notwendiges Cookie, das Ihre
+          Cookie-Einwilligung speichert. Es werden keine Tracking- oder Analyse-Cookies verwendet.
+        </p>
+        <p>
+          <strong>Kontaktformular:</strong><br />
+          Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage
+          und für mögliche Anschlussfragen gespeichert. Diese Daten geben wir nicht ohne Ihre
+          Einwilligung weiter. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.
+        </p>
+        <p>
+          <strong>Ihre Rechte:</strong><br />
+          Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
+          Datenübertragbarkeit und Widerspruch. Wenden Sie sich dazu an:
+          <a href="mailto:info@kriegerstein.com">info@kriegerstein.com</a>.
+          Außerdem steht Ihnen das Recht zur Beschwerde bei einer Datenschutz-Aufsichtsbehörde zu.
         </p>
       </div>
     </div>
@@ -249,10 +329,25 @@
         }
       });
     }, { threshold: 0.1 });
-
     document.querySelectorAll('.card, .why-grid, .contact-grid').forEach(el => {
       el.classList.add('fade-in');
       observer.observe(el);
+    });
+
+    // Cookie banner
+    const banner = document.getElementById('cookieBanner');
+    if (localStorage.getItem('cookieAccepted')) {
+      banner.style.display = 'none';
+    }
+    document.getElementById('cookieAccept').addEventListener('click', () => {
+      localStorage.setItem('cookieAccepted', '1');
+      banner.classList.add('cookie-hide');
+      setTimeout(() => banner.style.display = 'none', 400);
+    });
+
+    // Nav scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('nav-scrolled', window.scrollY > 50);
     });
   </script>
 </body>
