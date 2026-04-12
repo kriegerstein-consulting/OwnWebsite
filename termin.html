@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gespräch vereinbaren – Kriegerstein Consulting</title>
+  <meta name="description" content="Buchen Sie jetzt Ihr kostenloses Erstgespräch mit Kriegerstein Consulting." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .calendly-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-dark, #0a0a0a);
+    }
+    .calendly-main {
+      flex: 1;
+      padding-top: 80px;
+      padding-bottom: 0.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .calendly-header {
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+    .calendly-header .section-eyebrow {
+      margin-bottom: 0.25rem;
+    }
+    .calendly-header h1 {
+      font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.25rem;
+    }
+    .calendly-header p {
+      color: var(--text-muted, #888);
+      font-size: 0.95rem;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .calendly-embed-wrap {
+      flex: 1;
+      width: 100%;
+      margin: 0;
+      padding: 0 6rem;
+      box-sizing: border-box;
+    }
+    .calendly-inline-widget {
+      width: 100%;
+      height: calc(100vh - 160px);
+      min-height: 650px;
+      border: none;
+    }
+  </style>
+</head>
+<body class="calendly-page">
+
+  <nav class="nav nav-scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="logo-white.svg" alt="Kriegerstein Consulting" height="72" />
+      </a>
+      <a href="/" class="btn btn-outline-light nav-cta">Zurück zur Website</a>
+    </div>
+  </nav>
+
+  <main class="calendly-main">
+    <div class="container">
+      <a href="/" class="back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Zurück zur Startseite
+      </a>
+
+      <div class="calendly-header">
+        <p class="section-eyebrow">Termin buchen</p>
+        <h1>Kostenloses Erstgespräch vereinbaren</h1>
+        <p>Wählen Sie einfach einen passenden Termin – wir freuen uns auf das Gespräch.</p>
+      </div>
+    </div>
+
+    <div class="calendly-embed-wrap">
+      <iframe
+        class="calendly-inline-widget"
+        src="https://calendly.com/finn-krieger-kriegerstein/30min?embed_type=Inline&hide_gdpr_banner=1"
+        title="Termin bei Kriegerstein Consulting buchen"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </main>
+
+</body>
+</html>
